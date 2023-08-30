@@ -1,15 +1,41 @@
-<p>Menu:</p>
-	<ul>
-		<li>Sandwiches
-			<ul>
-				<li>Turkey</li>
-				<li>BLT</li>
-			</ul>
-		</li>
-		<li>Burritos
-			<ul>
-				<li>Bean</li>
-				<li>Carne Asada</li>
-			</ul>
-		</li>
-	</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project Week 2 Lab</title>
+</head>
+<body>
+	<h1 id="h1">A Random Photo</h1>
+		<p>Over <strong>3 millon</strong> free high-resolution images brought to you by the world's most <em>generous</em> communiity of photographers.</p>
+		<p>Click <a href="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cXVlcnl8fHx8fHwxNjkzNDE0OTA1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" target="_blank">here</a> for more info.</p>
+	<img src="https://images.unsplash.com/photo-1489875347897-49f64b51c1f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cXVlcnl8fHx8fHwxNjkzNDE0OTA1&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080" alt="random photo" width="600px">
+	<div class="container">
+		<p>Change heading background color to: </p>
+		<button type="button" id="btn-white" onclick="changeColor('white')">White</button>
+		<button type="button" id="btn-green" onclick="changeColor('green')">Green</button>
+	</div>
+
+	<style>
+		h1 {
+			color: blue;
+		}
+		.container {
+			display: flex;
+			flex: 0;
+			align-items: center;
+		}
+		button {
+			height: 2rem;
+		}
+	</style>
+	<script>
+		const h1 = document.getElementById('h1');
+		function changeColor(color) {
+			h1.style.backgroundColor = color;
+			console.log("yip")
+		}
+
+	</script>
+</body>
+</html>
