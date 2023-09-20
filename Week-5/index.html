@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="https://wp.zybooks.com/form-viewer.php" method="POST" enctype="multipart/form-data">
+		<fieldset>
+			<legend><h3>User Info</h3></legend>
+				<label for='username'>Username</label>
+				<input type='text' 
+							name='username' 
+							id='username'
+							required>
+			<br><br>
+				<label for='password'>Password</label>
+				<input type='password' 
+							name='password' 
+							id='password'
+							required>
+			<br><br>
+			<label for='email'>Email</label>
+			<input type='email' 
+						name='email' 
+						id='email'
+						required>
+			<br><br>
+			<fieldset>
+				<legend><h3>Select your courses</h3></legend>
+				<label for="ITSE-1311">ITSE-1311</label>
+				<input type='checkbox' 
+							name='ITSE-1311' 
+							id='ITSE-1311'>
+				<label for="ITSE-1359">ITSE-1359</label>
+				<input type='checkbox' 
+							name='ITSE-1359' 
+							id='ITSE-1359'>
+				<label for="ITSE-2335">ITSE-2335</label>
+				<input type='checkbox' 
+							name='ITSE-2335' 
+							id='ITSE-2335'>
+				<label for="ITSE-1436">ITSE-1436</label>
+				<input type='checkbox' 
+							name='ITSE-1436' 
+							id='ITSE-1436'>
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend><h3>Select your favortie Professor</h3></legend>
+				<label for="Lewis">Lewis</label>
+				<input type='radio' 
+							name='Lewis' 
+							id='Lewis'
+							checked>
+				<label for="Daly">Daly</label>
+				<input type='radio' 
+							name='Daly' 
+							id='Daly'>
+				<label for="Pannell">Pannell</label>
+				<input type='radio' 
+							name='Pannell' 
+							id='Pannell'>
+				<label for="Benavides">Benavides</label>
+				<input type='radio' 
+							name='Benavides' 
+							id='Benavides'>
+			</fieldset>
+			<br>
+			<input type="file" name="file" id="file">
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+</body>
+</html>
