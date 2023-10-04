@@ -1,0 +1,64 @@
+/* External CSS */
+body {
+	background-color: lightpink;
+}
+/* Element selector */
+p {
+	color: blue;
+}
+/* Class selector */
+.highlight {
+	background-color: lightyellow;
+}
+p {
+	color: purple;
+}
+/* ID Selector */
+#specialPara {
+	color: chocolate;
+}
+/* Pseudo-class selectors */
+img:hover {
+	width: 275px;
+}
+/* Universal Selector */
+* {
+	background-color: white;
+}
+/* Multiple selectors */
+header,
+section,
+footer {
+	background-color: lightgray;
+}
+/* Combinators */
+
+/* Descendant selector */
+.content p {
+	color: darkgreen;
+}
+/* Sibling selectors */
+
+/* General sibling */
+h4 ~ p {
+	color: darkslateblue;
+}
+/* Adjacent sibling */
+p+p {
+	color: red;
+}
+/* Attribute selectors */
+a[target] {
+	color: dodgerblue;
+}
+/* Begins with */
+[class^="nav"] {
+	color: indigo;
+	background-color: chocolate;
+}
+
+/* pseudo-element - selection */
+p::selection {
+	background-color: red;
+	color: white;
+}
