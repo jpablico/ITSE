@@ -1,0 +1,80 @@
+:root {
+	--primary-color: green;
+	--secondary-color: rgb(0, 255, 149);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+#overlay-text {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	place-items: center;
+
+	color: #ffffff;
+	
+	text-shadow: 2px 2px 4px #000000;
+
+	background-image: url(/forest.jpg);
+	background-size: cover;
+	height: 100vh;
+}
+
+#overlay-text > h2 {
+	font-size: 5rem;
+}
+
+#overlay-text > p {
+	font-size: 2rem;
+}
+
+#floated-img {
+	float: left;
+	width: 200px;
+}
+
+nav {
+	width: 100vw;
+	background-color: var(--primary-color);
+}
+
+nav > ul {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	height: 10vh;
+	justify-content: center;
+	place-items: center;
+	font-size: 2rem;
+	list-style-type: none;
+}
+
+nav > ul > li > a {
+	text-decoration: none;
+	color: #ffffff;
+}
+nav > ul > li > a:hover {
+	color: var(--secondary-color);
+}
+
+#content {
+	background-color: var(--secondary-color);
+	padding: 2rem;
+}
+
+#content > p {
+	padding: 1rem;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	background-color: var(--primary-color);
+}
