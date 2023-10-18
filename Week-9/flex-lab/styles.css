@@ -1,0 +1,101 @@
+ :root {
+	--primary-color: #0151cc;
+	--secondary-color: #a1c3ff;
+	--tertiary-color: #3474e6;
+	--text-color: #ffffff;
+ }
+
+ * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;;
+ }
+
+ body {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.5;
+	background-color: var(--secondary-color);
+ }
+
+ #navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--tertiary-color);
+	height: 10vh;
+	width: 100vw;
+	padding: 1rem;
+ }
+
+.container {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: space-between;
+	color: var(--text-color);
+	padding-left: 15vw;
+	padding-right: 15vw;
+}
+
+#logo {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#nav {
+	display: flex;
+	list-style-type: none;
+	gap: 1rem;
+}
+
+#nav > li > a {
+	text-decoration: none;
+	color: var(--text-color);
+	font-weight: bold;
+}
+
+#header {
+	display: flex;
+	height: 50vh;
+}
+#header > .container {
+	background-color: var(--primary-color);
+}
+
+.header-h1 {
+	font-size: 3rem;
+	padding-bottom: 1rem;
+}
+
+#header > .container > img {
+	width: 30vw;
+}
+.link {
+	color: yellow;
+}
+#boxes {
+	display: flex;
+	padding: 1rem;;
+}
+
+#boxes > .container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	flex-direction: row;
+	gap: 2vw;
+}
+.box {
+	background-color: var(--primary-color);
+	padding: 1rem;
+	border-radius: 1rem;
+	height: min(200px, 20vh);
+}
+
+h2 {
+	font-size: 1.5rem;
+	padding-bottom: 10px;
+}
+
+#boxes > .container> .box > p {
+	font-size: 14px;
+	font-weight: lighter;
+}
