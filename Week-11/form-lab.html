@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Contact Us</legend>
+
+        <label for="fullname">Your Name:</label>
+        <input type="text" name="fullname" id="fullname">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="msg">Your Message:</label>
+        <textarea name="msg" id="msg"></textarea>
+
+        <div class="checks">
+          <input type="checkbox" name="copyEmail" id="copyEmail">
+          <label for="copyEmail">Send copy to email</label>
+        </div>
+
+        <div class="checks">
+          <p>Prefered method of contact:</p>
+          
+          <input type="radio" name="Contact" id="contactEmail" value="email">
+          <label for="contactEmail">Email</label>
+          
+          <input type="radio" name="Contact" id="contactTel" value="phone">
+          <label for="contactTel">Phone</label>
+
+          <input type="radio" name="Contact" id="contactText" value="text">
+          <label for="contactText">Text message</label>
+        </div>
+
+        <input type="submit" id="submit" value="Contact Us">
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
