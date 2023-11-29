@@ -185,3 +185,27 @@ footer a{
 }
 
 
+@media  screen and (max-width: 800px) {
+	#featured li{
+		float: none;
+		width: 48%;
+	}
+	header nav{
+		float: none;
+	}
+	h1 .logo {
+		float: none;
+		margin: 10px auto 0;
+	}
+	header nav ul li {
+		margin: 10px 0;
+		padding: 0;
+		width: 20%;
+		text-align: center;
+	}
+	header nav ul{
+		margin: 0;
+		padding: 0;
+	}
+	
+}
