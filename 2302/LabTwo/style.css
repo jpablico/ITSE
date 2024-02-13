@@ -1,9 +1,16 @@
 body {
+	padding-top: 4rem;
 	text-align: center;
 	font-family: Arial, sans-serif;
   }
   
+h1 {
+	text-shadow: #45a049 1px 0px 10px;
+}
+
   #buttons {
+	display: flex;
+	justify-content: center;
 	margin: 20px 0;
   }
   
