@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Event Countdown</title>
+	<title>Birthdate Countdown</title>
 	<style>
 		body {
+			display: flex;
+			flex-direction: column;
+			margin: auto;
+			width: 100vw;
+			height: 100vh;
+			align-items: center;
 			font-family: Arial, sans-serif;
 			text-align: center;
 			background-color: #f4f4f4;
+			justify-content: center;
+			background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+			background-size: 400% 400%;
+			animation: gradient 15s ease infinite;
+
 		}
+		@keyframes gradient {
+			0% {
+				background-position: 0% 50%;
+			}
+			50% {
+				background-position: 100% 50%;
+			}
+			100% {
+				background-position: 0% 50%;
+			}
+		}
+		
 		#countdown {
 			font-size: 2em;
 			color: #333;
@@ -24,22 +47,25 @@
 	</style>
 </head>
 <body>
-	<h1>Event Countdown</h1>
+	<h1>Countdown until Josh's Birthday!</h1>
 	<p id="countdown">Days: Hours: Minutes:</p>
 	<button onclick="calculateCountdown()">Start Countdown</button>
 
 	<script>
-		function calculateCountdown() {
-			var targetDate = new Date("2023-01-01T00:00:00"); // Change this to your target date
-			var now = new Date();
-			var diff = targetDate - now;
+	function calculateCountdown() {
+		let now = new Date();
+		let targetDate = new Date(now.getFullYear(), 8, 27);
+			if (now > targetDate) {
+				targetDate.setFullYear(targetDate.getFullYear() + 1);
+			}
+		let diff = targetDate - now;
 
-			var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-			var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			var minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+		let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+		let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
 
-			document.getElementById("countdown").innerHTML = "Days: " + days + " Hours: " + hours + " Minutes: " + minutes;
-		}
+		document.getElementById("countdown").innerHTML = "Days: " + days + " Hours: " + hours + " Minutes: " + minutes;
+	}
 	</script>
 </body>
 </html>
