@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.input-fields {
+	display: flex;
+	flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-fields input, .input-fields button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.input-fields button {
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.story {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
