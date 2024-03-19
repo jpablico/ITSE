@@ -7,20 +7,26 @@ body {
 	display: flex;
 	flex-direction: column;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .input-fields input, .input-fields button {
     margin: 10px 0;
     padding: 10px;
     font-size: 16px;
+    border-radius: 5px;
+    width: 300px;
 }
 
 .input-fields button {
+    margin: 10px 0;
+    padding: 10px;
     cursor: pointer;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
+    width: 300px;
 }
 
 .story {
