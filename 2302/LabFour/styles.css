@@ -1,13 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Arial, sans-serif;
     margin: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
 }
 
 .input-fields {
-	display: flex;
-	flex-direction: column;
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .input-fields input, .input-fields button {
@@ -19,18 +52,14 @@ body {
 }
 
 .input-fields button {
-    margin: 10px 0;
-    padding: 10px;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: #29d523;
     color: white;
     border: none;
-    border-radius: 5px;
-    width: 300px;
 }
 
 .story {
     margin-top: 20px;
     font-size: 20px;
-    color: #333;
+    color: #333333;
 }
