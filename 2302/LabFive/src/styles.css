@@ -1,0 +1,66 @@
+body {
+    font-family: "PT Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #008080;
+    color: #FFFF00;
+}
+
+.title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 3em;
+}
+
+.owl-logo {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    filter: contrast(500%);
+}
+
+.search-container {
+    text-align: center;
+    margin: auto;
+    width: 100vw;
+}
+
+#owlsList {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color: #0000FF;
+}
+
+th, td {
+    border: 2px solid #FFFF00;
+    padding: 8px;
+    text-align: left;
+    background-color: #0000FF;
+    color: #FFFF00;
+}
+
+th {
+    background-color: #FFA500;
+    color: #800080;
+}
+
+input, button {
+    margin: 10px 0;
+    background-color: #FFA500;
+    color: #800080;
+    border: none;
+    text-shadow: none;
+    box-shadow: 3px 3px #000000;
+}
+
+input[type="text"] {
+    font-size: 1.5em;
+    padding: 10px;
+    width: 50%;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 20px;
+}

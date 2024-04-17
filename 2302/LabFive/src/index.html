@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owls of North Texas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+    <body>
+        <h1 class="title">Owls of North Texas</h1>
+        <img src="/assets/image-from-rawpixel-id-6314536-svg.svg" alt="owl" class="owl-logo">
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search owls...">
+            <button id="searchButton">Search</button>
+        </div>
+        <main>
+            <p><strong>North Texas</strong> is home to a variety of owl species. Here are some of the most common owls you might see in the region:</p>
+            <table id="owlsList">
+                <thead>
+                    <tr>
+                        <th>Common Name</th>
+                        <th>Scientific Name</th>
+                        <th>Habitat</th>
+                        <th>Diet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Eastern Screech Owl</td>
+                        <td>Megascops asio</td>
+                        <td>Woodlands</td>
+                        <td>Insects, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Barred Owl</td>
+                        <td>Strix varia</td>
+                        <td>Swamps, dense forests</td>
+                        <td>Fish, small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Great Horned Owl</td>
+                        <td>Bubo virginianus</td>
+                        <td>Forests, prairies, deserts</td>
+                        <td>Rodents, birds, reptiles</td>
+                    </tr>
+                    <tr>
+                        <td>Barn Owl</td>
+                        <td>Tyto alba</td>
+                        <td>Open country, farms, urban areas</td>
+                        <td>Rodents, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Short-eared Owl</td>
+                        <td>Asio flammeus</td>
+                        <td>Grasslands, marshes</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Long-eared Owl</td>
+                        <td>Asio otus</td>
+                        <td>Forests, woodlands</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Northern Saw-whet Owl</td>
+                        <td>Aegolius acadicus</td>
+                        <td>Forests, woodlands</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Elf Owl</td>
+                        <td>Micrathene whitneyi</td>
+                        <td>Deserts, arid regions</td>
+                        <td>Insects, scorpions</td>
+                    </tr>
+                    <tr>
+                        <td>Flammulated Owl</td>
+                        <td>Psiloscops flammeolus</td>
+                        <td>Forests, woodlands</td>
+                        <td>Insects</td>
+                    </tr>
+                    <tr>
+                        <td>Western Screech Owl</td>
+                        <td>Megascops kennicottii</td>
+                        <td>Woodlands, deserts</td>
+                        <td>Insects, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Boreal Owl</td>
+                        <td>Aegolius funereus</td>
+                        <td>Coniferous forests</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Spotted Owl</td>
+                        <td>Strix occidentalis</td>
+                        <td>Dense old-growth forests</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Whiskered Screech Owl</td>
+                        <td>Megascops trichopsis</td>
+                        <td>Mountainous woodlands</td>
+                        <td>Insects, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Ferruginous Pygmy Owl</td>
+                        <td>Glaucidium brasilianum</td>
+                        <td>Woodlands, open areas</td>
+                        <td>Insects, small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Stygian Owl</td>
+                        <td>Asio stygius</td>
+                        <td>Forests, dense woodlands</td>
+                        <td>Birds, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Mexican Spotted Owl</td>
+                        <td>Strix occidentalis lucida</td>
+                        <td>Canyons, dense forests</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Burrowing Owl</td>
+                        <td>Athene cunicularia</td>
+                        <td>Open grasslands, deserts</td>
+                        <td>Insects, small mammals</td>
+                    </tr>
+                    <tr>
+                        <td>Eastern Barn Owl</td>
+                        <td>Tyto alba pratincola</td>
+                        <td>Open country, farmland</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Snowy Owl</td>
+                        <td>Bubo scandiacus</td>
+                        <td>Open tundra, fields</td>
+                        <td>Rodents, birds</td>
+                    </tr>
+                    <tr>
+                        <td>Hawk Owl</td>
+                        <td>Surnia ulula</td>
+                        <td>Coniferous forests, open woodlands</td>
+                        <td>Small mammals, birds</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
