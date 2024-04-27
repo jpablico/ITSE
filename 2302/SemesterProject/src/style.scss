@@ -1,6 +1,128 @@
-$body-color: red;
+$primary-color: #256EFF;
+$body-color: #ffffff;
+$font-color: #000000;
+$font-color-light: #ffffff;
 
-body {
-  background-color: $body-color;
-  height: 100vh;
+$font-family-heading: 'Oswald', sans-serif;
+$font-family-body: 'Roboto', sans-serif;
+$font-size-heading: 2rem;
+$font-size-subheading: 1.5rem;
+$font-size-base: 1rem;
+$font-size-small: 0.875rem;
+
+$spacing-small: 0.5rem;
+$spacing-medium: 1rem;
+$spacing-large: 2rem;
+
+$border-radius: 0.25rem;
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transition($properties) {
+  -webkit-transition: $properties;
+  -moz-transition: $properties;
+  -o-transition: $properties;
+  transition: $properties;
+}
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -o-transform: $transform;
+  transform: $transform;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    padding: 1rem;
+
+      .header {
+        @include flex(row, space-between, center);
+
+        .header__logo {
+          @include flex(row, center, center);
+          gap: $spacing-small;
+
+          .logo__title {
+            color: $primary-color;
+            font-family: $font-family-heading;
+            font-size: $font-size-heading;
+            text-decoration: none;
+          }
+
+          .logo {
+            width: 3rem;
+          }
+        }
+
+      .burger {
+        cursor: pointer;
+        display: block;
+
+        .burger-line {
+          background-color: $font-color;
+          border-radius: $border-radius;
+          height: 0.125rem;
+          margin: 0.25rem 0;
+          width: 1.5rem;
+        }
+      }
+    }
+    
+    .nav {
+      background-color: $primary-color;
+      display: none;
+      position: fixed;
+      right: 0;
+      width: 100vw;
+      z-index: 1;
+    
+      .nav__list {
+        @include flex(column, center, center);
+        height: 100%;
+        list-style: none;
+        padding: 0rem 2rem;
+        width: 100%;
+
+        .nav__item {
+          font-size: $font-size-heading;
+          
+          .nav__link {
+            color: $body-color;
+            font-family: $font-family-heading;
+            font-size: $font-size-base;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .nav-active {
+      display: block;
+    }
+  } 
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+ 
+}
+
+@media only screen and (min-width: 1024px) {
+  
 }

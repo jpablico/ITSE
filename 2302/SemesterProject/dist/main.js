@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\n\nconst contentMain = document.getElementById('content');\n\n\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ \"./src/style.scss\");\n\n\n\n// Select the burger menu and the navigation menu\nconst burger = document.querySelector('.burger');\nconst nav = document.querySelector('.nav');\n\n// Add an event listener to the burger menu\nburger.addEventListener('click', () => {\n    // Toggle the 'nav-active' class on the navigation menu\n    nav.classList.toggle('nav-active');\n});\n\n//# sourceURL=webpack://restaurantpage/./src/index.js?");
 
 /***/ })
 

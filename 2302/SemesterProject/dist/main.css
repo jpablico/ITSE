@@ -1,7 +1,77 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
-body {
-  background-color: red;
-  height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+  .header-container {
+    padding: 1rem;
+  }
+  .header-container .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-container .header .header__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header-container .header .header__logo .logo__title {
+    color: #256EFF;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+  .header-container .header .header__logo .logo {
+    width: 3rem;
+  }
+  .header-container .header .burger {
+    cursor: pointer;
+    display: block;
+  }
+  .header-container .header .burger .burger-line {
+    background-color: #000000;
+    border-radius: 0.25rem;
+    height: 0.125rem;
+    margin: 0.25rem 0;
+    width: 1.5rem;
+  }
+  .header-container .nav {
+    background-color: #256EFF;
+    display: none;
+    position: fixed;
+    right: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  .header-container .nav .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0rem 2rem;
+    width: 100%;
+  }
+  .header-container .nav .nav__list .nav__item {
+    font-size: 2rem;
+  }
+  .header-container .nav .nav__list .nav__item .nav__link {
+    color: #ffffff;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .header-container .nav-active {
+    display: block;
+  }
 }
