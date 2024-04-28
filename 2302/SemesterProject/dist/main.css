@@ -7,9 +7,14 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 767px) {
+.highlight-text {
+  color: #256EFF;
+}
+
+@media only screen and (max-width: 600px) {
   .header-container {
     padding: 1rem;
+    border-bottom: 1px solid #000000;
   }
   .header-container .header {
     display: flex;
@@ -26,7 +31,7 @@
   }
   .header-container .header .header__logo .logo__title {
     color: #256EFF;
-    font-family: "Oswald", sans-serif;
+    font-family: "Staatliches", sans-serif;
     font-size: 2rem;
     text-decoration: none;
   }
@@ -38,7 +43,7 @@
     display: block;
   }
   .header-container .header .burger .burger-line {
-    background-color: #000000;
+    background-color: #256EFF;
     border-radius: 0.25rem;
     height: 0.125rem;
     margin: 0.25rem 0;
@@ -49,8 +54,9 @@
     display: none;
     position: fixed;
     right: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
+    margin-top: 1rem;
   }
   .header-container .nav .nav__list {
     display: flex;
@@ -67,11 +73,317 @@
   }
   .header-container .nav .nav__list .nav__item .nav__link {
     color: #ffffff;
-    font-family: "Oswald", sans-serif;
+    font-family: "Staatliches", sans-serif;
     font-size: 1rem;
     text-decoration: none;
   }
   .header-container .nav-active {
     display: block;
+  }
+  .main .hero__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: none;
+    padding: 3rem 1rem;
+  }
+  .main .hero__main .hero__main__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    flex: 1;
+    font-weight: 500;
+  }
+  .main .hero__main .hero__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+  }
+  .main .hero__main .hero__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+  }
+  .main .hero__main .hero__buttons__container .hero__button {
+    background-color: #256EFF;
+    border-radius: 0.25rem;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .main .hero__main .hero__buttons__container .hero__button:hover {
+    background-color: #0051f1;
+  }
+  .main .hero__main .hero__image {
+    height: 20vh;
+    width: 110%;
+    background-image: url(6140670262efd7c1f0a6.png);
+    background-size: cover;
+    background-position: center;
+    margin: 1rem -1rem;
+  }
+  .main .services .service__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .main .services .service__card .service__card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 0.5rem;
+  }
+  .main .services .service__card .service__card__text .service__card__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #256EFF;
+    text-align: center;
+  }
+  .main .services .service__card .service__card__text .service__card__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main .reliable {
+    padding: 2rem;
+  }
+  .main .reliable .top__text {
+    display: none;
+    padding: 0 1rem;
+  }
+  .main .reliable .reliable__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 0.5rem;
+  }
+  .main .reliable .reliable__text .reliable__text__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #256EFF;
+  }
+  .main .reliable .reliable__text .reliable__text__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+  }
+  .main .reliable .reliable__text__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  .main .reliable .reliable__text__cards .reliable__text__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main .reliable .reliable__text__cards .reliable__text__card .reliable__text__card__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #256EFF;
+  }
+  .main .reliable .reliable__text__cards .reliable__text__card .reliable__text__card__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+  }
+  .main .reliable__image__banner {
+    height: 20vh;
+    width: 100%;
+    background-image: url(c5c359569e59932c96a9.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.25rem;
+  }
+  .main .CTA {
+    background-image: linear-gradient(to bottom, #256eff, #256eff, #256eff, #808eff, #b3b2ff, #dcd7ff, #ffffff);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  .main .CTA .CTA__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .main .CTA .CTA__buttons__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+  }
+  .main .CTA .CTA__buttons__container .CTA__button {
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    color: #256EFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  .main .CTA .CTA__buttons__container .CTA__button:hover {
+    background-color: #e6e6e6;
+  }
+  .main .FAQ {
+    padding: 2rem;
+    text-align: center;
+  }
+  .main .FAQ .FAQ__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .main .FAQ .FAQ__questions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main .FAQ .FAQ__questions .FAQ__question {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main .FAQ .FAQ__questions .FAQ__question .FAQ__question__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #256EFF;
+  }
+  .main .FAQ .FAQ__questions .FAQ__question .FAQ__question__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+  }
+  .main .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+  .main .contact .contact__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main .contact .contact__card .contact__card__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main .contact .contact__card .contact__card__text .contact__card__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #256EFF;
+    margin-bottom: 0.5rem;
+  }
+  .main .contact .contact__card .contact__card__text .contact__card__subtext {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+    font-weight: 500;
+  }
+  .main .contact .contact__card .contact__card__text .contact__card__subtext__important {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    padding: 0 1rem;
+    font-weight: 600;
+  }
+  .main .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .main .footer .footer__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main .footer .footer__logo .logo {
+    width: 3rem;
+  }
+  .main .footer .footer__nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .main .footer .footer__nav .footer__nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  .main .footer .footer__nav .footer__nav__list .footer__nav__item {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: #256EFF;
+    cursor: pointer;
+  }
+  .main .footer .footer__nav .footer__nav__list .footer__nav__item .footer__nav__link {
+    color: #256EFF;
+    text-decoration: none;
+  }
+  .main .footer .footer__hr {
+    border: 1px solid #256EFF;
+    width: 100%;
+  }
+  .main .footer .footer__rights {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    color: #000000;
+  }
+  .main .footer .footer__Privacy_Terms_Cookie {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .main .footer .footer__Privacy_Terms_Cookie .footer__Privacy_Terms_Cookie__link {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.875rem;
+    color: #000000;
+    text-decoration: none;
   }
 }

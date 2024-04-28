@@ -3,8 +3,8 @@ $body-color: #ffffff;
 $font-color: #000000;
 $font-color-light: #ffffff;
 
-$font-family-heading: 'Oswald', sans-serif;
-$font-family-body: 'Roboto', sans-serif;
+$font-family-heading: "Staatliches", sans-serif;
+$font-family-body: "Roboto", sans-serif;
 $font-size-heading: 2rem;
 $font-size-subheading: 1.5rem;
 $font-size-base: 1rem;
@@ -43,18 +43,29 @@ $border-radius: 0.25rem;
   transform: $transform;
 }
 
+// Global Styles
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 767px) {
+.highlight-text {
+  color: $primary-color;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
   .header-container {
     padding: 1rem;
+    border-bottom: 1px solid #000000;
 
       .header {
         @include flex(row, space-between, center);
+        
 
         .header__logo {
           @include flex(row, center, center);
@@ -77,7 +88,7 @@ $border-radius: 0.25rem;
         display: block;
 
         .burger-line {
-          background-color: $font-color;
+          background-color: $primary-color;
           border-radius: $border-radius;
           height: 0.125rem;
           margin: 0.25rem 0;
@@ -91,8 +102,9 @@ $border-radius: 0.25rem;
       display: none;
       position: fixed;
       right: 0;
-      width: 100vw;
+      width: 100%;
       z-index: 1;
+      margin-top: 1rem;
     
       .nav__list {
         @include flex(column, center, center);
@@ -116,7 +128,332 @@ $border-radius: 0.25rem;
     .nav-active {
       display: block;
     }
-  } 
+  }
+
+  .main {
+
+    .hero__main {
+      @include flex(column, start, none);
+      padding: 3rem 1rem;
+
+      .hero__main__title {
+        font-family: $font-family-body;
+        font-size: $font-size-heading * 1.2;
+        margin-bottom: $spacing-medium;
+        flex: 1;
+        font-weight: 500;
+      } 
+
+      .hero__subtext {
+        font-family: $font-family-body;
+        font-size: $font-size-base;
+      }
+
+      .hero__buttons__container {
+        @include flex(row, start, center);
+        margin: $spacing-medium 0;
+        gap: $spacing-small;
+
+        .hero__button {
+          background-color: $primary-color;
+          border-radius: $border-radius;
+          color: $body-color;
+          font-family: $font-family-body;
+          font-size: $font-size-base;
+          padding: $spacing-small $spacing-medium;
+          text-decoration: none;
+          border: none;
+          transition: background-color 0.3s;
+
+          &:hover {
+            background-color: darken($primary-color, 10%);
+          }
+        
+        }
+      }
+
+      .hero__image {
+        height: 20vh;
+        width: 110%;
+        background-image: url("/src/assets/images/hero-image.png");
+        background-size: cover;
+        background-position: center;
+        margin: $spacing-medium -1rem;
+      }
+    }
+
+    .services {
+
+      .service__card {
+        @include flex(column, center, center);
+        margin: $spacing-medium;
+
+        .service__card__icon {
+
+        }
+
+        .service__card__text {
+          @include flex(column, center, center);
+          margin: $spacing-medium;
+          gap: $spacing-small;
+          .service__card__title {
+            font-family: $font-family-body;
+            font-size: $font-size-subheading;
+            margin: $spacing-small 0;
+            color: $primary-color;
+            text-align: center;
+          }
+  
+          .service__card__subtext {
+            font-family: $font-family-body;
+            font-size: $font-size-base;
+            text-align: center;
+          
+          }
+        }
+       
+      }
+    }
+
+    .reliable {
+      //background-color: $primary-color;
+      //color: $body-color;
+      padding: $spacing-large;
+      
+
+      .top__text {
+        display: none;
+        padding: 0 $spacing-medium;
+      }
+
+      .reliable__text {
+        @include flex(column, center, center);
+        margin: $spacing-medium;
+        gap: $spacing-small;
+        
+
+        .reliable__text__title {
+          font-family: $font-family-body;
+          font-size: $font-size-subheading;
+          margin: $spacing-small 0;
+          color: $primary-color;
+        }
+
+        .reliable__text__subtext {
+          font-family: $font-family-body;
+          font-size: $font-size-small;
+        }
+      }
+
+      .reliable__text__cards {
+        @include flex(row, center, center);
+        gap: $spacing-large;
+        padding: $spacing-medium;
+
+        .reliable__text__card {
+          @include flex(column, center, center);
+          gap: $spacing-small;
+
+          .reliable__text__card__title {
+            font-family: $font-family-body;
+            font-size: $font-size-subheading;
+            margin: $spacing-small 0;
+            color: $primary-color;
+          }
+
+          .reliable__text__card__subtext {
+            font-family: $font-family-body;
+            font-size: $font-size-small;
+          }
+        }
+      }
+    }
+    .reliable__image__banner {
+      height: 20vh;
+      width: 100%;
+      background-image: url("/src/assets/images/components.png");
+      background-size: cover;
+      background-position: center;
+      //margin: $spacing-medium -1rem;
+      border-radius: $border-radius;
+      
+    }
+
+    .CTA {
+      background-image: linear-gradient(to bottom, #256eff, #256eff, #256eff, #808eff, #b3b2ff, #dcd7ff, #ffffff);
+      color: $body-color;
+      padding: $spacing-large;
+      text-align: center;
+
+      .CTA__title {
+        font-family: $font-family-body;
+        font-size: $font-size-heading;
+        margin: $spacing-medium 0;
+      }
+      .CTA__buttons__container {
+        @include flex(row, center, center);
+        margin: $spacing-medium 0;
+        gap: $spacing-small;
+
+        .CTA__button {
+          background-color: $body-color;
+          border-radius: $border-radius;
+          color: $primary-color;
+          font-family: $font-family-body;
+          font-size: $font-size-base;
+          padding: $spacing-small $spacing-medium;
+          text-decoration: none;
+          border: none;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: darken($body-color, 10%);
+          }
+        }
+      }
+     
+    
+    }
+
+    .FAQ {
+      padding: $spacing-large;
+      text-align: center;
+
+      .FAQ__title {
+        font-family: $font-family-body;
+        font-size: $font-size-heading;
+        margin: $spacing-medium 0;
+      }
+
+      .FAQ__questions {
+        @include flex(column, center, center);
+        gap: $spacing-medium;
+
+        .FAQ__question {
+          @include flex(column, center, center);
+          gap: $spacing-small;
+
+          .FAQ__question__title {
+            font-family: $font-family-body;
+            font-size: $font-size-subheading;
+            margin: $spacing-small 0;
+            color: $primary-color;
+          }
+
+          .FAQ__question__subtext {
+            font-family: $font-family-body;
+            font-size: $font-size-base;
+          }
+        }
+      }
+    
+    }
+
+    .contact {
+      @include flex(column, center, center);
+      gap: $spacing-large;
+      padding: $spacing-large;
+      text-align: center;
+
+      .contact__card {
+        @include flex(column, center, center);
+
+        .contact__card__text {
+          @include flex(column, center, center);
+          gap: $spacing-small;
+
+          .contact__card__title {
+            font-family: $font-family-body;
+            font-size: $font-size-heading;
+            //margin: $spacing-medium 0;
+            color: $primary-color;
+            margin-bottom: $spacing-small;
+          }
+  
+          .contact__card__subtext {
+            font-family: $font-family-body;
+            font-size: $font-size-base;
+            padding: 0 $spacing-medium;
+            font-weight: 500;
+          }
+
+          .contact__card__subtext__important {
+            font-family: $font-family-body;
+            font-size: $font-size-base;
+            padding: 0 $spacing-medium;
+            font-weight: 600;
+          }
+        }
+       
+      }
+    }
+
+    .footer {
+      @include flex(column, center, center);
+      gap: $spacing-medium;
+      margin: $spacing-medium;
+      padding: $spacing-medium;
+
+      .footer__logo {
+        @include flex(row, center, center);
+        gap: $spacing-small;
+
+        .logo {
+          width: 3rem;
+        }
+      }
+
+      .footer__nav {
+        @include flex(row, center, center);
+        gap: $spacing-medium;
+
+        .footer__nav__list {
+          @include flex(row, center, center);
+          gap: $spacing-medium;
+          text-decoration: none;
+          list-style: none;
+          
+          .footer__nav__item {
+            font-family: $font-family-body;
+            font-size: $font-size-base;
+            color: $primary-color;
+            cursor: pointer;
+
+
+            .footer__nav__link {
+              color: $primary-color;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .footer__hr {
+        border: 1px solid $primary-color;
+        width: 100%;
+      }
+
+      .footer__rights {
+        font-family: $font-family-body;
+        font-size: $font-size-small;
+        color: $font-color;
+      
+      }
+
+      .footer__Privacy_Terms_Cookie {
+        @include flex(row, center, center);
+        gap: $spacing-small;
+
+        .footer__Privacy_Terms_Cookie__link {
+          font-family: $font-family-body;
+          font-size: $font-size-small;
+          color: $font-color;
+          text-decoration: none;
+        }
+      
+      }
+    }
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
