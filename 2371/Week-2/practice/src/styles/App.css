@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: white;
+  gap: 1rem;
+}
+
+.ComponentCard {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  box-sizing: border-box;
+  
+  .imgSrc {
+    border-radius: 5%;
+  }
+
+  .text {
+    padding: .4rem;
+    
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
