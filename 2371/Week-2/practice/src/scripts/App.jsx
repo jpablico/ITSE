@@ -1,21 +1,12 @@
 import '../styles/App.css'
-import SubcomOne from './Components/SubcomOne.jsx';
-import SubcomTwo from './Components/SubcomTwo.jsx';
-import SubcomThree from './Components/SubcomThree.jsx';
-import SubcomFour from './Components/SubcomFour.jsx';
-
+import Mother from '../scripts/Components/Mother.jsx';
 
 function App() {
 
   return (
     <>
       <div className="App">
-        <h1 className='mainTitle'>Animals</h1>
-
-        <SubcomOne />
-        <SubcomTwo />
-        <SubcomThree />
-        <SubcomFour />
+        <Mother />
       </div>
     </>
   )
