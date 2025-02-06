@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Zebra",
+    "description": "Zebras are known for their distinctive black and white stripes...",
+    "image": "zebra.jpg"
+  },
+  {
+    "title": "Giraffe",
+    "description": "Giraffes are the tallest animals on Earth...",
+    "image": "giraffe.jpg"
+  },
+  {
+    "title": "Elephant",
+    "description": "Elephants are the largest land animals on Earth...",
+    "image": "elephant.jpg"
+  },
+  {
+    "title": "Wolf",
+    "description": "Wolves are highly social animals...",
+    "image": "wolf.jpg"
+  }
+]

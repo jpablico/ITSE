@@ -1,12 +1,12 @@
 import '../styles/App.css'
-import Mother from '../scripts/Components/Mother.jsx';
+import ParentComponent from '../scripts/Components/ParentComponent.jsx';
 
 function App() {
 
   return (
     <>
       <div className="App">
-        <Mother />
+        <ParentComponent />
       </div>
     </>
   )

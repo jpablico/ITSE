@@ -15,6 +15,13 @@
   gap: 1rem;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
 .ComponentCard {
   display: flex;
   flex-direction: row;
