@@ -15,8 +15,8 @@ function App() {
     return (
         <div className="container">
             <header>
-                <h1>🐶🐱🐰</h1>
                 <h1>Pet Rescue Counter</h1>
+                <h2>Click the buttons to rescue our furry friends!</h2>
             </header>
             <div className="counter-container">
                 <button onClick={() => handleClick("dog")}>Dogs: {dogCount}</button>
