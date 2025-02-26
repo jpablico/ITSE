@@ -2,23 +2,17 @@ import { useState } from "react";
 
 function ProductList() {
     const [products, setProducts] = useState([
-        { id: 1, title: "Laptop", price: 999 },
-        { id: 2, title: "Phone", price: 499 },
-        { id: 3, title: "Headphones", price: 199 },
-        { id: 4, title: "Smartwatch", price: 299 },
-        { id: 5, title: "Tablet", price: 399 },
-        { id: 6, title: "Monitor", price: 249 },
-        { id: 7, title: "Keyboard", price: 99 },
-        { id: 8, title: "Mouse", price: 49 },
-        { id: 9, title: "Speaker", price: 149 },
-        { id: 10, title: "Charger", price: 29 },
+        { id: 1, title: "MacBook Air", price: 999.99 },
+        { id: 2, title: "iPhone", price: 999.99 },
+        { id: 3, title: "Airpods", price: 199.99 },
+        { id: 4, title: "Apple Watch Ultra", price: 899.99 },
     ]);
 
     const addProduct = () => {
         const newProduct = {
             id: products.length + 1,
             title: `New Product ${products.length + 1}`,
-            price: Math.floor(Math.random() * 500) + 50,
+            price: Math.floor(Math.random() * 600) + 50,
         };
         setProducts([...products, newProduct]);
     };
