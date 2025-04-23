@@ -1,6 +1,7 @@
 <script setup>
 import Header from './components/Header.vue'
 import Hero from './components/Hero.vue'
+import Meetings from './components/Meetings.vue'
 
 </script>
 
@@ -8,6 +9,7 @@ import Hero from './components/Hero.vue'
   <div>
     <Header />
     <Hero />
+    <Meetings />
   </div>
 </template>
 
