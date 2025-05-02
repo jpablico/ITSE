@@ -3,8 +3,12 @@ import React from 'react';
 function Header() {
   return (
     <header className="header">
+      <div className="brand">
+        <img src="/src/assets/Weatho.png" alt="Weatho Logo" className="brand-logo" />
+      <h1 className="brand-name" alt="Weatho">Weatho</h1>
+      </div>
       <nav className="nav">
-        <h1 className="logo">Weatho</h1>
+        
         <ul className="nav-links">
           <li><a href="/">Home</a></li>
           <li><a href="/forecast">Forecast</a></li>
