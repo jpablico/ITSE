@@ -4,10 +4,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2023 Weatho. All rights reserved.</p>
-        <ul className="social-links">
-          <li><a href="#">Social Link</a></li>
-        </ul>
+        <p>&copy; ITSE Semster Project | Josh Pablico</p>
       </div>
     </footer>
   );

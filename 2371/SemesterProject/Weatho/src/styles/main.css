@@ -1,0 +1,57 @@
+.noto-sans-jp {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #34a9e3;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  height: auto;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header .brand {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #34a9e3;
+  transition: all 0.3s ease-in-out;
+}
+.header .brand:hover {
+  background-color: #34a9e3;
+  transform: scale(1.05);
+}
+.header .brand .brand-logo {
+  width: 9rem;
+  height: 9rem;
+  margin-right: 0.2rem;
+}
+.header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=main.css.map */

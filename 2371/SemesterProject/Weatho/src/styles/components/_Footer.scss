@@ -1,0 +1,44 @@
+@use '../Global' as *;
+
+.footer {
+  @include flex(row, center, center);
+  width: 100%;
+  padding: 1rem;
+  background-color: $background-color;
+  color: white;
+  font-size: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  .footer-text {
+    margin-right: auto;
+    margin-left: 1rem;
+    font-size: 1rem;
+    color: white;
+
+    a {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .footer-icons {
+    @include flex(row, center, center);
+    gap: .5rem;
+
+    a {
+      color: white;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: $background-color;
+      }
+    }
+  }
+}

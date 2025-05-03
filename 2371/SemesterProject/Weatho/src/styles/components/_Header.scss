@@ -2,7 +2,7 @@
 
 .header {
   .brand{
-    @include flex(row, center, center);
+    @include flex(column, center, center);
     font-size: 1.2rem;
     font-weight: 700;
     color: $text-color;
@@ -18,13 +18,16 @@
     }
 
     .brand-logo {
-      width: 9rem;
-      height: 9rem;
+      width: 8rem;
+      height: 8rem;
       margin-right: .2rem;
     }
-  }
 
-  .nav {
-    @include flex(row, space-between, center);
+    .brand-name {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: $text-color;
+      margin-top: -2rem;
+    }
   }
 }

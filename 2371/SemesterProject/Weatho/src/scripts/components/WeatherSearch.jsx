@@ -21,12 +21,14 @@ function WeatherSearch({ onSearch }) {
   return (
     <div className="weather-search">
       <input
+        className='search-input'
         type="text"
         value={city}
         onChange={(e) => setCity(e.target.value)}
+        onKeyPress={handleKeyPress}
         placeholder="Enter city name"
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='search-button' onClick={handleSearch}>Search</button>
     </div>
   );
 }
