@@ -82,11 +82,11 @@
      
       .weather-icon-container {
         @include flex(row, center, center);
-        flex: 0 0 40%; /* Don't grow, don't shrink, take 40% width */
+        flex: 0 0 40%;
         margin: auto;
 
         .weather-icon {
-          width: 80%;
+          width: 20vh;
           margin-top: -16.5vh;
           margin-bottom: -15vh;
           margin-right: -12vw;
